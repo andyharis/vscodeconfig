@@ -1,0 +1,30 @@
+{
+    "window.zoomLevel": -1,
+    "workbench.colorTheme": "Hop Light",
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "material-icon-theme",
+    // editor
+    "editor.fontFamily": "Operator Mono, Roboto",
+    "editor.fontSize": 14,
+    "editor.minimap.enabled": false,
+    "editor.tokenColorCustomizations": {
+        "[Hop Light]": {
+            "textMateRules": [
+                {
+                    "scope": "meta.interface",
+                    "settings": {
+                        "foreground": "#be3d3d"
+                    }
+                }
+            ]
+        }
+    },
+    // other
+    "colorize.languages": [
+        "javascript",
+        "typescript",
+        "css",
+        "html",
+        "less"
+    ]
+}
