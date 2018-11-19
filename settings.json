@@ -4,21 +4,66 @@
     "workbench.editor.enablePreview": false,
     "workbench.iconTheme": "material-icon-theme",
     // editor
-    "editor.fontFamily": "Operator Mono, Roboto",
+    "editor.fontFamily": "Operator Mono",
     "editor.fontSize": 14,
     "editor.minimap.enabled": false,
     "editor.tokenColorCustomizations": {
         "[Hop Light]": {
             "textMateRules": [
                 {
-                    "scope": "meta.interface",
+                    "scope": [
+                        "entity.name.type.interface",
+                        "entity.name.type"
+                    ],
                     "settings": {
                         "foreground": "#be3d3d"
                     }
-                }
+                },
+                {
+                    "scope": [
+                        "variable.other.readwrite.alias"
+                    ],
+                    "settings": {
+                        "foreground": "#3d77be",
+                    }
+                },
             ]
         }
     },
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.renderControlCharacters": true,
+    "editor.renderIndentGuides": true,
+    "editor.trimAutoWhitespace": true,
+    "editor.wordWrapColumn": 120,
+    "editor.wordWrap": "wordWrapColumn",
+    // javascript
+    "javascript.format.enable": true,
+    "javascript.format.insertSpaceAfterCommaDelimiter": true,
+    "javascript.format.insertSpaceAfterConstructor": true,
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+    "javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+    "javascript.format.insertSpaceAfterSemicolonInForStatements": true,
+    "javascript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+    // typescript
+    "typescript.format.enable": true,
+    "typescript.format.insertSpaceAfterCommaDelimiter": true,
+    "typescript.format.insertSpaceAfterConstructor": true,
+    "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+    "typescript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+    "typescript.format.insertSpaceAfterSemicolonInForStatements": true,
+    "typescript.format.insertSpaceAfterTypeAssertion": false,
+    "typescript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+    "typescript.format.insertSpaceBeforeFunctionParenthesis": false,
     // other
     "colorize.languages": [
         "javascript",
@@ -26,5 +71,12 @@
         "css",
         "html",
         "less"
-    ]
+    ],
+    // workbench
+    "files.exclude": {
+        "/.git": true,
+        "/.DS_Store": true,
+        "/node_modules": true,
+        "/node_modules/": true
+    },
 }
