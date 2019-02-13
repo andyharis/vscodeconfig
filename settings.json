@@ -2,20 +2,28 @@
     "window.zoomLevel": -1,
     "workbench.colorTheme": "Hop Light",
     "workbench.editor.enablePreview": false,
-    "workbench.iconTheme": "material-icon-theme",
     // editor
-    "editor.fontFamily": "Operator Mono",
-    "editor.fontSize": 14,
+    "editor.fontFamily": "Operator Mono, Menlo",
+    "editor.fontSize": 15,
     "editor.minimap.enabled": false,
+    "editor.suggest.filterGraceful": true,
+    "editor.suggest.localityBonus": true,
+    "editor.wordBasedSuggestions": true,
     "editor.tokenColorCustomizations": {
         "[Hop Light]": {
+            "comments": {
+                // "foreground": "#FF0000",
+                // "fontStyle": "italic"
+            },
             "textMateRules": [
                 {
                     "scope": [
                         "entity.name.type.interface",
-                        "entity.name.type"
+                        "entity.name.type",
+                        "support.type.primitive"
                     ],
                     "settings": {
+                        "fontStyle": "italic",
                         "foreground": "#be3d3d"
                     }
                 },
@@ -25,6 +33,14 @@
                     ],
                     "settings": {
                         "foreground": "#3d77be",
+                    }
+                },
+                {
+                    "scope": [
+                        "comment.block.documentation"
+                    ],
+                    "settings": {
+                        "foreground": "#96928fff",
                     }
                 },
             ]
@@ -65,13 +81,16 @@
     "typescript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
     "typescript.format.insertSpaceBeforeFunctionParenthesis": false,
     // other
-    "colorize.languages": [
-        "javascript",
-        "typescript",
-        "css",
-        "html",
-        "less"
-    ],
+    "tslint.autoFixOnSave": true,
+    // "colorize.languages": [
+    //     "javascript",
+    //     "typescript",
+    //     "css",
+    //     "html",
+    //     "less"
+    // ],
+    "breadcrumbs.enabled": true,
+    // "eslint.provideLintTask": false,
     // workbench
     "files.exclude": {
         "/.git": true,
@@ -79,4 +98,44 @@
         "/node_modules": true,
         "/node_modules/": true
     },
+    "workbench.iconTheme": "material-icon-theme",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "autotsdoc.addReturns": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.enableExperiments": false,
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.tree.horizontalScrolling": true,
+    "bracketPairColorizer.independentPairColors": [
+        [
+          "()",
+          [
+            "#000",
+            "#693fc4",
+            "#e220f8"
+          ],
+          "#000"
+        ],
+        [
+          "[]",
+          [
+            "#000",
+            "#693fc4",
+            "#e220f8"
+          ],
+          "Black"
+        ],
+        [
+          "{}",
+          [
+            "#000",
+            "#693fc4",
+            "#e220f8"
+          ],
+          "#000"
+        ]
+    ],
+    "bracketPairColorizer.colorMode": "Independent",
+    "editor.tabCompletion": "on",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.enablePreviewFromQuickOpen": false
 }
